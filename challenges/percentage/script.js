@@ -6,7 +6,8 @@ document.getElementById('discount-btn').addEventListener('click', function () {
 
     const payable = document.getElementById('payable');
 
-    const total = (30 * price) / 100;
+    const discountPrice = (30 * price) / 100;
+    const total = price - discountPrice;
     payable.innerText = total;
 
 
