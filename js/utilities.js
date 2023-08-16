@@ -3,12 +3,16 @@ function getInputFieldValueById(inputFieldId){
     const inputFieldStr = inputField.value;
     const inputFieldValue = parseFloat(inputFieldStr);
     inputField.value = '';
-    // if(isNaN(inputFieldValue) || inputFieldValue === ''){
-    //     alert("Please! Enter Numbers.")
-    //     return;
-    // }
+
+    if(isNaN(inputFieldValue) || inputFieldValue <= 0){
+        alert("Please! Enter Number.")
+        return 0;
+    }
+
     return inputFieldValue;
 }
+
+
 
 function getInnerTextValueById(innerTextId){
     const inputField = document.getElementById(innerTextId);

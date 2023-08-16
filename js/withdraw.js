@@ -2,10 +2,10 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     const withdrawAmount = getInputFieldValueById("withdraw-field");
     const innerTextValue = getInnerTextValueById('withdraw-output');
 
-    if (isNaN(withdrawAmount)) {
-        alert("Please! Enter Numbers.")
-        return;
-    }
+    // if (isNaN(withdrawAmount)) {
+    //     alert("Please! Enter Numbers.")
+    //     return;
+    // }
 
     const balance = getInnerTextValueById('balance');
 
